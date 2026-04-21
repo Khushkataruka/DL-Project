@@ -1,0 +1,23 @@
+# Git ignores
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+venv/
+.env
+
+# Logs and Caches
+*.log
+STT_logs_remote/
+!STT_logs_remote/training_loss.png
+
+# Models
+whisper-indic-finetuned/
+whisper-indic-finetuned-final/
+*.safetensors
+
+# Optionally ignore results if you re-run them
+# streaming_eval_results.json
+# metrics_results.json
+# latex_examples.tex

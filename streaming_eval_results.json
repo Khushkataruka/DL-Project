@@ -1,0 +1,110 @@
+{
+    "final_metrics": {},
+    "sample_translations": [
+        {
+            "sample_index": 1,
+            "true_language": "hindi",
+            "detected_language": "unknown",
+            "ground_truth": "Twenty thirty at six thousand, forty four thousand, eighty eight, ninety thousand",
+            "prediction": "Twenty, thirty, eighty six thousand, forty four thousand, eighty eight, ninety thousand"
+        },
+        {
+            "sample_index": 2,
+            "true_language": "hindi",
+            "detected_language": "unknown",
+            "ground_truth": "Yes, I can say numbers between ten and ten lakhs",
+            "prediction": "Yes, I can say a sign between ten to ten lakhs"
+        },
+        {
+            "sample_index": 3,
+            "true_language": "hindi",
+            "detected_language": "unknown",
+            "ground_truth": "One lakh one thousand one hundred five, two lakhs two thousand three hundred five, four lakhs three thousand three hundred five, five lakhs four thousand three hundred five, six lakhs eight thousand three hundred eight",
+            "prediction": "One lakh, one thousand, one hundred five, two lakhs, two thousand, three hundred five, four lakhs, three thousand, three hundred five, five lakhs, four thousand, three hundred five, six lakhs, eight thousand, three hundred eight"
+        },
+        {
+            "sample_index": 4,
+            "true_language": "bengali",
+            "detected_language": "unknown",
+            "ground_truth": "To keep the human body fit, sports are essential, because just as playing sports keeps the mind healthy, it also benefits the body physically to a great extent when one exercises",
+            "prediction": " People are forced to keep their bodies clean, because when they are clean, they are forced to keep their bodies clean, because when they are clean, they are forced to keep their bodies clean, because when they are clean, they are forced to keep their bodies clean, because when they are clean, their minds are clean, because they are forced to keep their bodies clean, because they are forced to keep their bodies clean, because they are forced to keep their bodies clean, because they are forced to keep their minds clean, because they are forced to keep their bodies clean, because they are forced to keep their bodies clean, because they are forced to keep their bodies clean, because they are forced to keep their bodies clean, because they are forced to keep their bodies clean, because they are forced to keep their bodies clean, because they are forced to keep their bodies clean, because they are forced to keep their bodies clean, because they are forced to keep their bodies clean, because they are forced to keep their bodies clean, because they are forced to keep their bodies clean, because they are forced to keep their bodies clean, because they are forced to keep their bodies clean, because they are forced to keep their bodies clean, because they are forced to keep their bodies clean, because they are forced to keep their bodies clean, because they are forced to keep their bodies clean, because they are forced to keep their bodies clean, because they are forced to keep their bodies clean, because they are forced to keep their bodies clean, because they are forced to keep their bodies clean, because they are forced to keep their bodies clean, because they are forced to keep their bodies clean their bodies clean, because they are forced to keep their bodies clean their bodies clean, because they are forced to keep their bodies"
+        },
+        {
+            "sample_index": 5,
+            "true_language": "bengali",
+            "detected_language": "unknown",
+            "ground_truth": "The trend of playing sports is decreasing day by day",
+            "prediction": " The sports are becoming popular these days"
+        },
+        {
+            "sample_index": 6,
+            "true_language": "bengali",
+            "detected_language": "unknown",
+            "ground_truth": "Nowadays, due to spending time on the internet or social sites, not engaging in sports leads to various problems in different aspects of the human body",
+            "prediction": " If the internet or social media is affected, people will face problems in their childhood"
+        },
+        {
+            "sample_index": 7,
+            "true_language": "telugu",
+            "detected_language": "unknown",
+            "ground_truth": "Some festival items and products are suggested",
+            "prediction": "Some of the traditional items are available in products"
+        },
+        {
+            "sample_index": 8,
+            "true_language": "telugu",
+            "detected_language": "unknown",
+            "ground_truth": "Rama Rao district is providing various job opportunities",
+            "prediction": "In Antiramara district, various employment opportunities are available"
+        },
+        {
+            "sample_index": 9,
+            "true_language": "telugu",
+            "detected_language": "unknown",
+            "ground_truth": "These include agriculture, industries, services, and self employment",
+            "prediction": "It is about business, facilities, services, and self service services"
+        },
+        {
+            "sample_index": 10,
+            "true_language": "marathi",
+            "detected_language": "unknown",
+            "ground_truth": "Please show the amount of my contribution to the Atal Pension Scheme for last month for the PRAN number nine eight eight one six eight four one one eight two eight",
+            "prediction": "Show the amount of the paid pension for the number nine eight eight one six eight four one eight two eight or PRAN"
+        },
+        {
+            "sample_index": 11,
+            "true_language": "marathi",
+            "detected_language": "unknown",
+            "ground_truth": "Hello Rahul Travel Agency, I had booked your car a few days ago, and since I received very good service, I want to go out of town with my family again",
+            "prediction": "Hello, Rangul Travel Agency! I had booked your car a few days ago, and I have to return to my family's house after getting a very good service"
+        },
+        {
+            "sample_index": 12,
+            "true_language": "marathi",
+            "detected_language": "unknown",
+            "ground_truth": "Therefore, I would like to have the same car and driver that you provided earlier for our travel",
+            "prediction": "Therefore, you can send me the car that was given earlier for traveling"
+        },
+        {
+            "sample_index": 13,
+            "true_language": "gujarati",
+            "detected_language": "unknown",
+            "ground_truth": "In Gujarat, many religious scriptures and texts are followed, such as the Vedas, Quran Sharif, Bible, and Tripitaka",
+            "prediction": "In Gujarat, many religious texts and scriptures are included, such as Vedas, the Quran Sharif, the Bible, and the Tripitaka"
+        },
+        {
+            "sample_index": 14,
+            "true_language": "gujarati",
+            "detected_language": "unknown",
+            "ground_truth": "People of every religion reside in Gujarat, among them, Hindus recite the Vedas, Muslims recite the Quran Sharif, Christians read the Bible, and many others do the same",
+            "prediction": "In Gujarat, there are many religious people, such as the Hindus who worship the Vedas, Muslims worship the Quran Sharif, and Christians worship the Bible, which is why many people sing"
+        },
+        {
+            "sample_index": 15,
+            "true_language": "gujarati",
+            "detected_language": "unknown",
+            "ground_truth": "Eight",
+            "prediction": "Ten"
+        }
+    ]
+}
