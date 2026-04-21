@@ -9,7 +9,7 @@ venv/
 
 # Logs and Caches
 *.log
-STT_logs_remote/
+STT_logs_remote/*
 !STT_logs_remote/training_loss.png
 
 # Models
