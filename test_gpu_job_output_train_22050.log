@@ -1,0 +1,261 @@
+Looking in indexes: https://download.pytorch.org/whl/cu128
+Requirement already satisfied: torch in /home/pkc/envs/stt_env/lib/python3.12/site-packages (2.11.0+cu128)
+Requirement already satisfied: torchvision in /home/pkc/envs/stt_env/lib/python3.12/site-packages (0.26.0+cu128)
+Requirement already satisfied: torchaudio in /home/pkc/envs/stt_env/lib/python3.12/site-packages (2.11.0+cu128)
+Requirement already satisfied: filelock in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from torch) (3.25.2)
+Requirement already satisfied: typing-extensions>=4.10.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from torch) (4.15.0)
+Requirement already satisfied: setuptools<82 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from torch) (70.2.0)
+Requirement already satisfied: sympy>=1.13.3 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from torch) (1.14.0)
+Requirement already satisfied: networkx>=2.5.1 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from torch) (3.6.1)
+Requirement already satisfied: jinja2 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from torch) (3.1.6)
+Requirement already satisfied: fsspec>=0.8.5 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from torch) (2024.9.0)
+Requirement already satisfied: cuda-toolkit==12.8.1 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch) (12.8.1)
+Requirement already satisfied: cuda-bindings<13,>=12.9.4 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from torch) (12.9.4)
+Requirement already satisfied: nvidia-cudnn-cu12==9.19.0.56 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from torch) (9.19.0.56)
+Requirement already satisfied: nvidia-cusparselt-cu12==0.7.1 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from torch) (0.7.1)
+Requirement already satisfied: nvidia-nccl-cu12==2.28.9 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from torch) (2.28.9)
+Requirement already satisfied: nvidia-nvshmem-cu12==3.4.5 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from torch) (3.4.5)
+Requirement already satisfied: triton==3.6.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from torch) (3.6.0)
+Requirement already satisfied: nvidia-cublas-cu12==12.8.4.1.* in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch) (12.8.4.1)
+Requirement already satisfied: nvidia-cuda-runtime-cu12==12.8.90.* in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch) (12.8.90)
+Requirement already satisfied: nvidia-cufft-cu12==11.3.3.83.* in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch) (11.3.3.83)
+Requirement already satisfied: nvidia-cufile-cu12==1.13.1.3.* in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch) (1.13.1.3)
+Requirement already satisfied: nvidia-cuda-cupti-cu12==12.8.90.* in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch) (12.8.90)
+Requirement already satisfied: nvidia-curand-cu12==10.3.9.90.* in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch) (10.3.9.90)
+Requirement already satisfied: nvidia-cusolver-cu12==11.7.3.90.* in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch) (11.7.3.90)
+Requirement already satisfied: nvidia-cusparse-cu12==12.5.8.93.* in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch) (12.5.8.93)
+Requirement already satisfied: nvidia-nvjitlink-cu12==12.8.93.* in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch) (12.8.93)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.8.93.* in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch) (12.8.93)
+Requirement already satisfied: nvidia-nvtx-cu12==12.8.90.* in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch) (12.8.90)
+Requirement already satisfied: numpy in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from torchvision) (2.4.3)
+Requirement already satisfied: pillow!=8.3.*,>=5.3.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from torchvision) (12.1.1)
+Requirement already satisfied: cuda-pathfinder~=1.1 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from cuda-bindings<13,>=12.9.4->torch) (1.2.2)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from sympy>=1.13.3->torch) (1.3.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from jinja2->torch) (3.0.3)
+Requirement already satisfied: transformers in /home/pkc/envs/stt_env/lib/python3.12/site-packages (5.5.4)
+Requirement already satisfied: datasets in /home/pkc/envs/stt_env/lib/python3.12/site-packages (3.1.0)
+Requirement already satisfied: evaluate in /home/pkc/envs/stt_env/lib/python3.12/site-packages (0.4.6)
+Requirement already satisfied: peft in /home/pkc/envs/stt_env/lib/python3.12/site-packages (0.19.1)
+Requirement already satisfied: accelerate in /home/pkc/envs/stt_env/lib/python3.12/site-packages (1.13.0)
+Requirement already satisfied: librosa in /home/pkc/envs/stt_env/lib/python3.12/site-packages (0.11.0)
+Requirement already satisfied: soundfile in /home/pkc/envs/stt_env/lib/python3.12/site-packages (0.13.1)
+Requirement already satisfied: bitsandbytes in /home/pkc/envs/stt_env/lib/python3.12/site-packages (0.49.2)
+Requirement already satisfied: huggingface-hub<2.0,>=1.5.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from transformers) (1.11.0)
+Requirement already satisfied: numpy>=1.17 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from transformers) (2.4.3)
+Requirement already satisfied: packaging>=20.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from transformers) (26.1)
+Requirement already satisfied: pyyaml>=5.1 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from transformers) (6.0.3)
+Requirement already satisfied: regex>=2025.10.22 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from transformers) (2026.4.4)
+Requirement already satisfied: tokenizers<=0.23.0,>=0.22.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from transformers) (0.22.2)
+Requirement already satisfied: typer in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from transformers) (0.24.1)
+Requirement already satisfied: safetensors>=0.4.3 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from transformers) (0.7.0)
+Requirement already satisfied: tqdm>=4.27 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from transformers) (4.67.3)
+Requirement already satisfied: filelock in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from datasets) (3.25.2)
+Requirement already satisfied: pyarrow>=15.0.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from datasets) (23.0.1)
+Requirement already satisfied: dill<0.3.9,>=0.3.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from datasets) (0.3.8)
+Requirement already satisfied: pandas in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from datasets) (3.0.2)
+Requirement already satisfied: requests>=2.32.2 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from datasets) (2.33.1)
+Requirement already satisfied: xxhash in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from datasets) (3.6.0)
+Requirement already satisfied: multiprocess<0.70.17 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from datasets) (0.70.16)
+Requirement already satisfied: fsspec<=2024.9.0,>=2023.1.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from fsspec[http]<=2024.9.0,>=2023.1.0->datasets) (2024.9.0)
+Requirement already satisfied: aiohttp in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from datasets) (3.13.5)
+Requirement already satisfied: psutil in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from peft) (7.2.2)
+Requirement already satisfied: torch>=1.13.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from peft) (2.11.0+cu128)
+Requirement already satisfied: audioread>=2.1.9 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from librosa) (3.1.0)
+Requirement already satisfied: numba>=0.51.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from librosa) (0.65.0)
+Requirement already satisfied: scipy>=1.6.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from librosa) (1.17.1)
+Requirement already satisfied: scikit-learn>=1.1.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from librosa) (1.8.0)
+Requirement already satisfied: joblib>=1.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from librosa) (1.5.3)
+Requirement already satisfied: decorator>=4.3.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from librosa) (5.2.1)
+Requirement already satisfied: pooch>=1.1 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from librosa) (1.9.0)
+Requirement already satisfied: soxr>=0.3.2 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from librosa) (1.0.0)
+Requirement already satisfied: typing_extensions>=4.1.1 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from librosa) (4.15.0)
+Requirement already satisfied: lazy_loader>=0.1 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from librosa) (0.5)
+Requirement already satisfied: msgpack>=1.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from librosa) (1.1.2)
+Requirement already satisfied: cffi>=1.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from soundfile) (2.0.0)
+Requirement already satisfied: pycparser in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from cffi>=1.0->soundfile) (3.0)
+Requirement already satisfied: aiohappyeyeballs>=2.5.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from aiohttp->datasets) (2.6.1)
+Requirement already satisfied: aiosignal>=1.4.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from aiohttp->datasets) (1.4.0)
+Requirement already satisfied: attrs>=17.3.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from aiohttp->datasets) (26.1.0)
+Requirement already satisfied: frozenlist>=1.1.1 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from aiohttp->datasets) (1.8.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from aiohttp->datasets) (6.7.1)
+Requirement already satisfied: propcache>=0.2.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from aiohttp->datasets) (0.4.1)
+Requirement already satisfied: yarl<2.0,>=1.17.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from aiohttp->datasets) (1.23.0)
+Requirement already satisfied: hf-xet<2.0.0,>=1.4.3 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from huggingface-hub<2.0,>=1.5.0->transformers) (1.4.3)
+Requirement already satisfied: httpx<1,>=0.23.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from huggingface-hub<2.0,>=1.5.0->transformers) (0.28.1)
+Requirement already satisfied: llvmlite<0.48,>=0.47.0dev0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from numba>=0.51.0->librosa) (0.47.0)
+Requirement already satisfied: platformdirs>=2.5.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from pooch>=1.1->librosa) (4.9.6)
+Requirement already satisfied: charset_normalizer<4,>=2 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from requests>=2.32.2->datasets) (3.4.7)
+Requirement already satisfied: idna<4,>=2.5 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from requests>=2.32.2->datasets) (3.11)
+Requirement already satisfied: urllib3<3,>=1.26 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from requests>=2.32.2->datasets) (2.6.3)
+Requirement already satisfied: certifi>=2023.5.7 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from requests>=2.32.2->datasets) (2026.2.25)
+Requirement already satisfied: threadpoolctl>=3.2.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from scikit-learn>=1.1.0->librosa) (3.6.0)
+Requirement already satisfied: setuptools<82 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from torch>=1.13.0->peft) (70.2.0)
+Requirement already satisfied: sympy>=1.13.3 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from torch>=1.13.0->peft) (1.14.0)
+Requirement already satisfied: networkx>=2.5.1 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from torch>=1.13.0->peft) (3.6.1)
+Requirement already satisfied: jinja2 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from torch>=1.13.0->peft) (3.1.6)
+Requirement already satisfied: cuda-toolkit==12.8.1 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch>=1.13.0->peft) (12.8.1)
+Requirement already satisfied: cuda-bindings<13,>=12.9.4 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from torch>=1.13.0->peft) (12.9.4)
+Requirement already satisfied: nvidia-cudnn-cu12==9.19.0.56 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from torch>=1.13.0->peft) (9.19.0.56)
+Requirement already satisfied: nvidia-cusparselt-cu12==0.7.1 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from torch>=1.13.0->peft) (0.7.1)
+Requirement already satisfied: nvidia-nccl-cu12==2.28.9 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from torch>=1.13.0->peft) (2.28.9)
+Requirement already satisfied: nvidia-nvshmem-cu12==3.4.5 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from torch>=1.13.0->peft) (3.4.5)
+Requirement already satisfied: triton==3.6.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from torch>=1.13.0->peft) (3.6.0)
+Requirement already satisfied: nvidia-cublas-cu12==12.8.4.1.* in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch>=1.13.0->peft) (12.8.4.1)
+Requirement already satisfied: nvidia-cuda-runtime-cu12==12.8.90.* in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch>=1.13.0->peft) (12.8.90)
+Requirement already satisfied: nvidia-cufft-cu12==11.3.3.83.* in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch>=1.13.0->peft) (11.3.3.83)
+Requirement already satisfied: nvidia-cufile-cu12==1.13.1.3.* in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch>=1.13.0->peft) (1.13.1.3)
+Requirement already satisfied: nvidia-cuda-cupti-cu12==12.8.90.* in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch>=1.13.0->peft) (12.8.90)
+Requirement already satisfied: nvidia-curand-cu12==10.3.9.90.* in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch>=1.13.0->peft) (10.3.9.90)
+Requirement already satisfied: nvidia-cusolver-cu12==11.7.3.90.* in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch>=1.13.0->peft) (11.7.3.90)
+Requirement already satisfied: nvidia-cusparse-cu12==12.5.8.93.* in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch>=1.13.0->peft) (12.5.8.93)
+Requirement already satisfied: nvidia-nvjitlink-cu12==12.8.93.* in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch>=1.13.0->peft) (12.8.93)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.8.93.* in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch>=1.13.0->peft) (12.8.93)
+Requirement already satisfied: nvidia-nvtx-cu12==12.8.90.* in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==12.8.1; platform_system == "Linux"->torch>=1.13.0->peft) (12.8.90)
+Requirement already satisfied: python-dateutil>=2.8.2 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from pandas->datasets) (2.9.0.post0)
+Requirement already satisfied: click>=8.2.1 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from typer->transformers) (8.3.2)
+Requirement already satisfied: shellingham>=1.3.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from typer->transformers) (1.5.4)
+Requirement already satisfied: rich>=12.3.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from typer->transformers) (15.0.0)
+Requirement already satisfied: annotated-doc>=0.0.2 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from typer->transformers) (0.0.4)
+Requirement already satisfied: cuda-pathfinder~=1.1 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from cuda-bindings<13,>=12.9.4->torch>=1.13.0->peft) (1.2.2)
+Requirement already satisfied: anyio in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=1.5.0->transformers) (4.13.0)
+Requirement already satisfied: httpcore==1.* in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=1.5.0->transformers) (1.0.9)
+Requirement already satisfied: h11>=0.16 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from httpcore==1.*->httpx<1,>=0.23.0->huggingface-hub<2.0,>=1.5.0->transformers) (0.16.0)
+Requirement already satisfied: six>=1.5 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from python-dateutil>=2.8.2->pandas->datasets) (1.17.0)
+Requirement already satisfied: markdown-it-py>=2.2.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from rich>=12.3.0->typer->transformers) (4.0.0)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from rich>=12.3.0->typer->transformers) (2.20.0)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from sympy>=1.13.3->torch>=1.13.0->peft) (1.3.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from jinja2->torch>=1.13.0->peft) (3.0.3)
+Requirement already satisfied: mdurl~=0.1 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from markdown-it-py>=2.2.0->rich>=12.3.0->typer->transformers) (0.1.2)
+Requirement already satisfied: datasets==3.1.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (3.1.0)
+Requirement already satisfied: filelock in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from datasets==3.1.0) (3.25.2)
+Requirement already satisfied: numpy>=1.17 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from datasets==3.1.0) (2.4.3)
+Requirement already satisfied: pyarrow>=15.0.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from datasets==3.1.0) (23.0.1)
+Requirement already satisfied: dill<0.3.9,>=0.3.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from datasets==3.1.0) (0.3.8)
+Requirement already satisfied: pandas in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from datasets==3.1.0) (3.0.2)
+Requirement already satisfied: requests>=2.32.2 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from datasets==3.1.0) (2.33.1)
+Requirement already satisfied: tqdm>=4.66.3 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from datasets==3.1.0) (4.67.3)
+Requirement already satisfied: xxhash in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from datasets==3.1.0) (3.6.0)
+Requirement already satisfied: multiprocess<0.70.17 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from datasets==3.1.0) (0.70.16)
+Requirement already satisfied: fsspec<=2024.9.0,>=2023.1.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from fsspec[http]<=2024.9.0,>=2023.1.0->datasets==3.1.0) (2024.9.0)
+Requirement already satisfied: aiohttp in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from datasets==3.1.0) (3.13.5)
+Requirement already satisfied: huggingface-hub>=0.23.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from datasets==3.1.0) (1.11.0)
+Requirement already satisfied: packaging in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from datasets==3.1.0) (26.1)
+Requirement already satisfied: pyyaml>=5.1 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from datasets==3.1.0) (6.0.3)
+Requirement already satisfied: aiohappyeyeballs>=2.5.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from aiohttp->datasets==3.1.0) (2.6.1)
+Requirement already satisfied: aiosignal>=1.4.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from aiohttp->datasets==3.1.0) (1.4.0)
+Requirement already satisfied: attrs>=17.3.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from aiohttp->datasets==3.1.0) (26.1.0)
+Requirement already satisfied: frozenlist>=1.1.1 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from aiohttp->datasets==3.1.0) (1.8.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from aiohttp->datasets==3.1.0) (6.7.1)
+Requirement already satisfied: propcache>=0.2.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from aiohttp->datasets==3.1.0) (0.4.1)
+Requirement already satisfied: yarl<2.0,>=1.17.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from aiohttp->datasets==3.1.0) (1.23.0)
+Requirement already satisfied: hf-xet<2.0.0,>=1.4.3 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from huggingface-hub>=0.23.0->datasets==3.1.0) (1.4.3)
+Requirement already satisfied: httpx<1,>=0.23.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from huggingface-hub>=0.23.0->datasets==3.1.0) (0.28.1)
+Requirement already satisfied: typer in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from huggingface-hub>=0.23.0->datasets==3.1.0) (0.24.1)
+Requirement already satisfied: typing-extensions>=4.1.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from huggingface-hub>=0.23.0->datasets==3.1.0) (4.15.0)
+Requirement already satisfied: charset_normalizer<4,>=2 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from requests>=2.32.2->datasets==3.1.0) (3.4.7)
+Requirement already satisfied: idna<4,>=2.5 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from requests>=2.32.2->datasets==3.1.0) (3.11)
+Requirement already satisfied: urllib3<3,>=1.26 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from requests>=2.32.2->datasets==3.1.0) (2.6.3)
+Requirement already satisfied: certifi>=2023.5.7 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from requests>=2.32.2->datasets==3.1.0) (2026.2.25)
+Requirement already satisfied: python-dateutil>=2.8.2 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from pandas->datasets==3.1.0) (2.9.0.post0)
+Requirement already satisfied: anyio in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from httpx<1,>=0.23.0->huggingface-hub>=0.23.0->datasets==3.1.0) (4.13.0)
+Requirement already satisfied: httpcore==1.* in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from httpx<1,>=0.23.0->huggingface-hub>=0.23.0->datasets==3.1.0) (1.0.9)
+Requirement already satisfied: h11>=0.16 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from httpcore==1.*->httpx<1,>=0.23.0->huggingface-hub>=0.23.0->datasets==3.1.0) (0.16.0)
+Requirement already satisfied: six>=1.5 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from python-dateutil>=2.8.2->pandas->datasets==3.1.0) (1.17.0)
+Requirement already satisfied: click>=8.2.1 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from typer->huggingface-hub>=0.23.0->datasets==3.1.0) (8.3.2)
+Requirement already satisfied: shellingham>=1.3.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from typer->huggingface-hub>=0.23.0->datasets==3.1.0) (1.5.4)
+Requirement already satisfied: rich>=12.3.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from typer->huggingface-hub>=0.23.0->datasets==3.1.0) (15.0.0)
+Requirement already satisfied: annotated-doc>=0.0.2 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from typer->huggingface-hub>=0.23.0->datasets==3.1.0) (0.0.4)
+Requirement already satisfied: markdown-it-py>=2.2.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from rich>=12.3.0->typer->huggingface-hub>=0.23.0->datasets==3.1.0) (4.0.0)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from rich>=12.3.0->typer->huggingface-hub>=0.23.0->datasets==3.1.0) (2.20.0)
+Requirement already satisfied: mdurl~=0.1 in /home/pkc/envs/stt_env/lib/python3.12/site-packages (from markdown-it-py>=2.2.0->rich>=12.3.0->typer->huggingface-hub>=0.23.0->datasets==3.1.0) (0.1.2)
+Loading IndicVoices-ST splits: ['hindi', 'bengali', 'telugu', 'marathi', 'gujarati']
+  ✓ Loaded split: hindi
+  ✓ Loaded split: bengali
+  ✓ Loaded split: telugu
+  ✓ Loaded split: marathi
+  ✓ Loaded split: gujarati
+Dataset streaming pipeline ready.
+trainable params: 3,538,944 || all params: 245,273,856 || trainable%: 1.4429
+Starting streaming training. This will take time depending on your GPU...
+{'loss': '17.87', 'grad_norm': '12.49', 'learning_rate': '2.45e-05', 'epoch': '0.0125'}
+{'loss': '11.85', 'grad_norm': '5.639', 'learning_rate': '4.95e-05', 'epoch': '0.025'}
+{'loss': '9.5', 'grad_norm': '4.701', 'learning_rate': '7.45e-05', 'epoch': '0.0375'}
+{'loss': '8.825', 'grad_norm': '4.787', 'learning_rate': '9.95e-05', 'epoch': '0.05'}
+{'loss': '7.538', 'grad_norm': '5.745', 'learning_rate': '9.871e-05', 'epoch': '0.0625'}
+{'loss': '6.879', 'grad_norm': '5.135', 'learning_rate': '9.739e-05', 'epoch': '0.075'}
+{'loss': '6.875', 'grad_norm': '4.909', 'learning_rate': '9.608e-05', 'epoch': '0.0875'}
+{'loss': '6.672', 'grad_norm': '4.832', 'learning_rate': '9.476e-05', 'epoch': '0.1'}
+{'loss': '6.81', 'grad_norm': '4.579', 'learning_rate': '9.345e-05', 'epoch': '0.1125'}
+{'loss': '6.725', 'grad_norm': '4.824', 'learning_rate': '9.213e-05', 'epoch': '0.125'}
+{'loss': '6.527', 'grad_norm': '4.863', 'learning_rate': '9.082e-05', 'epoch': '0.1375'}
+{'loss': '6.536', 'grad_norm': '4.588', 'learning_rate': '8.95e-05', 'epoch': '0.15'}
+{'loss': '6.619', 'grad_norm': '4.592', 'learning_rate': '8.818e-05', 'epoch': '0.1625'}
+{'loss': '6.775', 'grad_norm': '4.009', 'learning_rate': '8.687e-05', 'epoch': '0.175'}
+{'loss': '6.553', 'grad_norm': '4.377', 'learning_rate': '8.555e-05', 'epoch': '0.1875'}
+{'loss': '6.665', 'grad_norm': '4.414', 'learning_rate': '8.424e-05', 'epoch': '0.2'}
+{'loss': '6.801', 'grad_norm': '4.077', 'learning_rate': '8.292e-05', 'epoch': '0.2125'}
+{'loss': '6.57', 'grad_norm': '4.365', 'learning_rate': '8.161e-05', 'epoch': '0.225'}
+{'loss': '6.526', 'grad_norm': '5.798', 'learning_rate': '8.029e-05', 'epoch': '0.2375'}
+{'loss': '6.28', 'grad_norm': '4.818', 'learning_rate': '7.897e-05', 'epoch': '0.25'}
+{'loss': '6.517', 'grad_norm': '4.42', 'learning_rate': '7.766e-05', 'epoch': '0.2625'}
+{'loss': '6.39', 'grad_norm': '4.758', 'learning_rate': '7.634e-05', 'epoch': '1.01'}
+{'loss': '6.479', 'grad_norm': '4.272', 'learning_rate': '7.503e-05', 'epoch': '1.023'}
+{'loss': '6.419', 'grad_norm': '4.184', 'learning_rate': '7.371e-05', 'epoch': '1.035'}
+{'loss': '6.44', 'grad_norm': '4.766', 'learning_rate': '7.239e-05', 'epoch': '1.048'}
+{'loss': '6.207', 'grad_norm': '5.84', 'learning_rate': '7.108e-05', 'epoch': '1.06'}
+{'loss': '6.17', 'grad_norm': '5.111', 'learning_rate': '6.976e-05', 'epoch': '1.073'}
+{'loss': '6.249', 'grad_norm': '5.089', 'learning_rate': '6.845e-05', 'epoch': '1.085'}
+{'loss': '6.07', 'grad_norm': '4.639', 'learning_rate': '6.713e-05', 'epoch': '1.098'}
+{'loss': '6.284', 'grad_norm': '5.446', 'learning_rate': '6.582e-05', 'epoch': '1.11'}
+{'loss': '6.155', 'grad_norm': '4.526', 'learning_rate': '6.45e-05', 'epoch': '1.123'}
+{'loss': '6.049', 'grad_norm': '4.819', 'learning_rate': '6.318e-05', 'epoch': '1.135'}
+{'loss': '6.045', 'grad_norm': '4.412', 'learning_rate': '6.187e-05', 'epoch': '1.148'}
+{'loss': '6.114', 'grad_norm': '4.586', 'learning_rate': '6.055e-05', 'epoch': '1.16'}
+{'loss': '6.129', 'grad_norm': '4.851', 'learning_rate': '5.924e-05', 'epoch': '1.173'}
+{'loss': '6.2', 'grad_norm': '4.99', 'learning_rate': '5.792e-05', 'epoch': '1.185'}
+{'loss': '5.998', 'grad_norm': '4.265', 'learning_rate': '5.661e-05', 'epoch': '1.198'}
+{'loss': '5.992', 'grad_norm': '5.558', 'learning_rate': '5.529e-05', 'epoch': '1.21'}
+{'loss': '6.113', 'grad_norm': '5.253', 'learning_rate': '5.397e-05', 'epoch': '1.223'}
+{'loss': '6.238', 'grad_norm': '5.31', 'learning_rate': '5.266e-05', 'epoch': '1.235'}
+{'loss': '5.95', 'grad_norm': '5.666', 'learning_rate': '5.134e-05', 'epoch': '1.248'}
+{'loss': '6.051', 'grad_norm': '5.308', 'learning_rate': '5.003e-05', 'epoch': '1.26'}
+{'loss': '5.997', 'grad_norm': '5.105', 'learning_rate': '4.871e-05', 'epoch': '2.008'}
+{'loss': '5.98', 'grad_norm': '4.899', 'learning_rate': '4.739e-05', 'epoch': '2.021'}
+{'loss': '6.167', 'grad_norm': '4.839', 'learning_rate': '4.608e-05', 'epoch': '2.033'}
+{'loss': '5.975', 'grad_norm': '4.899', 'learning_rate': '4.476e-05', 'epoch': '2.046'}
+{'loss': '5.908', 'grad_norm': '5.107', 'learning_rate': '4.345e-05', 'epoch': '2.058'}
+{'loss': '5.774', 'grad_norm': '5.381', 'learning_rate': '4.213e-05', 'epoch': '2.071'}
+{'loss': '5.878', 'grad_norm': '5.21', 'learning_rate': '4.082e-05', 'epoch': '2.083'}
+{'loss': '5.756', 'grad_norm': '4.922', 'learning_rate': '3.95e-05', 'epoch': '2.095'}
+{'loss': '5.889', 'grad_norm': '5.854', 'learning_rate': '3.818e-05', 'epoch': '2.108'}
+{'loss': '5.84', 'grad_norm': '5.289', 'learning_rate': '3.687e-05', 'epoch': '2.12'}
+{'loss': '5.774', 'grad_norm': '4.81', 'learning_rate': '3.555e-05', 'epoch': '2.133'}
+{'loss': '5.708', 'grad_norm': '5.283', 'learning_rate': '3.424e-05', 'epoch': '2.146'}
+{'loss': '5.799', 'grad_norm': '5.532', 'learning_rate': '3.292e-05', 'epoch': '2.158'}
+{'loss': '5.848', 'grad_norm': '5.719', 'learning_rate': '3.161e-05', 'epoch': '2.171'}
+{'loss': '5.918', 'grad_norm': '4.945', 'learning_rate': '3.029e-05', 'epoch': '2.183'}
+{'loss': '5.756', 'grad_norm': '5.229', 'learning_rate': '2.897e-05', 'epoch': '2.196'}
+{'loss': '5.678', 'grad_norm': '4.809', 'learning_rate': '2.766e-05', 'epoch': '2.208'}
+{'loss': '5.66', 'grad_norm': '5.027', 'learning_rate': '2.634e-05', 'epoch': '2.22'}
+{'loss': '5.945', 'grad_norm': '4.94', 'learning_rate': '2.503e-05', 'epoch': '2.233'}
+{'loss': '5.806', 'grad_norm': '6.351', 'learning_rate': '2.371e-05', 'epoch': '2.245'}
+{'loss': '5.737', 'grad_norm': '5.44', 'learning_rate': '2.239e-05', 'epoch': '2.258'}
+{'loss': '5.79', 'grad_norm': '5.095', 'learning_rate': '2.108e-05', 'epoch': '3.006'}
+{'loss': '5.745', 'grad_norm': '5.556', 'learning_rate': '1.976e-05', 'epoch': '3.018'}
+{'loss': '5.877', 'grad_norm': '4.93', 'learning_rate': '1.845e-05', 'epoch': '3.031'}
+{'loss': '5.726', 'grad_norm': '5.713', 'learning_rate': '1.713e-05', 'epoch': '3.043'}
+{'loss': '5.745', 'grad_norm': '5.239', 'learning_rate': '1.582e-05', 'epoch': '3.056'}
+{'loss': '5.503', 'grad_norm': '6.056', 'learning_rate': '1.45e-05', 'epoch': '3.068'}
+{'loss': '5.662', 'grad_norm': '5.289', 'learning_rate': '1.318e-05', 'epoch': '3.081'}
+{'loss': '5.58', 'grad_norm': '5.704', 'learning_rate': '1.187e-05', 'epoch': '3.093'}
+{'loss': '5.636', 'grad_norm': '5.503', 'learning_rate': '1.055e-05', 'epoch': '3.106'}
+{'loss': '5.727', 'grad_norm': '5.074', 'learning_rate': '9.237e-06', 'epoch': '3.118'}
+{'loss': '5.566', 'grad_norm': '5.809', 'learning_rate': '7.921e-06', 'epoch': '3.131'}
+{'loss': '5.544', 'grad_norm': '4.876', 'learning_rate': '6.605e-06', 'epoch': '3.143'}
+{'loss': '5.709', 'grad_norm': '5.877', 'learning_rate': '5.289e-06', 'epoch': '3.156'}
+{'loss': '5.676', 'grad_norm': '4.935', 'learning_rate': '3.974e-06', 'epoch': '3.168'}
+{'loss': '5.766', 'grad_norm': '6.188', 'learning_rate': '2.658e-06', 'epoch': '3.181'}
+{'loss': '5.506', 'grad_norm': '6.261', 'learning_rate': '1.342e-06', 'epoch': '3.193'}
+{'loss': '5.449', 'grad_norm': '4.634', 'learning_rate': '2.632e-08', 'epoch': '3.206'}
+{'train_runtime': '8876', 'train_samples_per_second': '14.42', 'train_steps_per_second': '0.451', 'train_loss': '6.383', 'epoch': '3.206'}
+Training complete! Model saved to ./whisper-indic-finetuned-final
